@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máquina de sorteio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
 </head>
 <body>
     <h1>Máquinão de sorteião do Jorgião</h1>
+    <p class="version">Versão 1.0 sorteio de grupos de 4 pessoas</p>
     <div class="div-input-name">
-        <input class="input-name">
+        <input placeholder="Digite um nome" class="input-name">
         <button id="btn-add-name" onclick="addName()">+</button>
     </div>
     <h2 id="list-title">Lista de Nomes</h2>
+    <div id="list-names"></div>
     <script src="./index.js"></script> 
 </body>
 </html>
