@@ -5,20 +5,20 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
     margin-top: 2rem;
-  }
-  
-  .div-input-name {
+}
+
+.div-input-name {
     display: flex;
     justify-content: center;
     margin: 2rem 0;
-  }
-  
-  .input-name {
+}
+
+.input-name {
     width: 30rem;
     height: 3rem;
     font-size: 1.2rem;
@@ -26,9 +26,9 @@ body {
     padding: 0.5rem;
     border: none;
     outline: none;
-  }
-  
-  #btn-add-name {
+}
+
+#btn-add-name {
     width: 5rem;
     height: 4rem;
     font-size: 1.8rem;
@@ -37,29 +37,55 @@ body {
     border-radius: 0 0.5rem 0.5rem 0;
     border: none;
     cursor: pointer;
-  }
-  
-  #list-title {
+}
+
+#list-title {
     margin-top: 2rem;
     text-align: center;
-  }
+}
 
-  .version {
+.version {
     text-align: center;
-  }
-  
-  .item-name {
+}
+
+.item-name {
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: #8d6e63;
     border-radius: 0.5rem;
     display: inline-block;
-  }
-  
-  #list-names {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#list-names {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
-  }
+}
+
+#btn-basic {
+    height: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #8d6e63;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    padding-inline: 1rem;
+}
+
+.grupo-sorteado {
+    border: solid 0.1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+}
+
+#list-groups {
+    display: flex;
+    gap: 1.5rem;
+}
