@@ -21,6 +21,6 @@ Tem como objetivo rodar em ambientes windows e linux, usando um arquivo .bat ou 
 O passos principais serão listados na seguinte checklist:
 
 - [X] Criar a interface (arquivo html *fase beta*);
-- [ ] Criar a lógica para o sorteio (arquivo js);
-- [ ] Criar o script para manipulação da interface;
-- [X] Criar estilização da interface;
+- [X] Criar a lógica para o sorteio (arquivo js);
+- [X] Criar o script para manipulação da interface;
+- [ ] Criar estilização da interface;
