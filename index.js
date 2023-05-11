@@ -77,3 +77,9 @@ function removeElements(querySelectorName) {
         menu.removeChild(menu.firstChild);
     }
 }
+
+function cleanInterface() {
+    removeElements("#list-names");
+    removeElements("#list-groups");
+    arrNames = [];
+}
