@@ -23,4 +23,4 @@ O passos principais serão listados na seguinte checklist:
 - [X] Criar a interface (arquivo html *fase beta*);
 - [X] Criar a lógica para o sorteio (arquivo js);
 - [X] Criar o script para manipulação da interface;
-- [ ] Criar estilização da interface;
+- [X] Criar estilização da interface;

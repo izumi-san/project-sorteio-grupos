@@ -4,7 +4,7 @@ body {
     font-size: 1.2rem;
     color: #fff;
     margin: 0;
-    padding: 0;
+    padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 h1 {
@@ -19,7 +19,8 @@ h1 {
 }
 
 .input-name {
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
     height: 3rem;
     font-size: 1.2rem;
     border-radius: 0.5rem 0 0 0.5rem;
@@ -90,6 +91,7 @@ h1 {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .btn-section {
@@ -107,4 +109,11 @@ h1 {
 
 .invisible {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .input-name {
+        width: 80%;
+        max-width: none;
+    }
 }
