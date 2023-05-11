@@ -15,12 +15,15 @@
         <button id="btn-add-name" onclick="addName()">+</button>
     </div>
     <div class="btn-section">
-        <button id="btn-basic" onclick="shuffle()">Sortear</button>
-        <button id="btn-basic" onclick="cleanInterface()">Limpar</button>
+        <button class="btn-basic btn-shuffle" onclick="shuffle()">Sortear</button>
+        <button class="btn-basic" onclick="cleanInterface()">Limpar</button>
     </div>
     <div class="lists-content">
         <div class="names-section">
-            <h2 id="list-title">Lista de Nomes</h2>
+            <h2 class="list-title">Lista de Nomes</h2>
+            <div class="btn-rerun-section invisible">
+                <button class="btn-basic" onclick="reShuffle()">Re sortear ⟳</button>
+            </div>
             <div id="list-names"></div>
         </div>
         <div id="list-groups"></div>

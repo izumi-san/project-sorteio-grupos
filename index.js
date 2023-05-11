@@ -5,6 +5,7 @@ btn.addEventListener("click", () => {
 });
 
 var arrNames = [];
+var auxArrNames = [];
 
 function addName() {
     const nameInputField = document.querySelector(".input-name");
@@ -33,27 +34,39 @@ function addNameToHTML(name, destination) {
 
 
 function shuffle() {
-    if (arrNames.length == 0){
+    if (arrNames.length == 0) {
         return alert('digite pelo menos um nome, jovem')
     }
+    copyArray(arrNames, auxArrNames);
     const shuffledArray = shuffleArray(arrNames);
     removeElements("#list-names");
     removeElements("#list-groups");
+    createGroups(shuffledArray);
+    enableRerunBtn();
+    disableNewInputs();
+}
+
+function createGroups(listNames) {
     let groupNum = 1;
     let groupName = `GRUPO_${groupNum}`
     addDivGroup(groupName);
     let i = 0;
-    while (shuffledArray.length > 0) {
-        const name = shuffledArray.pop();
+    while (listNames.length > 0) {
+        const name = listNames.pop();
         addNameToHTML(name, `.${groupName}`)
-        console.log(groupName);
         i++;
-        if (i % 4 == 0 ) {
+        if (i % 4 == 0 && listNames.length > 0) {
             groupNum++;
             groupName = `GRUPO_${groupNum}`;
             addDivGroup(groupName)
         }
     }
+}
+
+function copyArray(arrFrom, arrTo) {
+    arrFrom.forEach(element => {
+        arrTo.push(element);
+    });
 }
 
 function addDivGroup(groupName) {
@@ -78,8 +91,49 @@ function removeElements(querySelectorName) {
     }
 }
 
+function reShuffle() {
+    const shuffledArray = shuffleArray(auxArrNames);
+    auxArrNames = [];
+    copyArray(shuffledArray, auxArrNames);
+    removeElements("#list-names");
+    removeElements("#list-groups");
+    createGroups(shuffledArray);
+    enableRerunBtn();
+}
+
 function cleanInterface() {
     removeElements("#list-names");
     removeElements("#list-groups");
     arrNames = [];
+    auxArrNames = [];
+    disableRerunBtn();
+    enableNewInputs();
+}
+
+function enableRerunBtn() {
+    const rerunSection = document.querySelector(".btn-rerun-section");
+    rerunSection.classList.remove("invisible");
+}
+
+function disableRerunBtn() {
+    const rerunSection = document.querySelector(".btn-rerun-section");
+    rerunSection.classList.add("invisible");
+}
+
+function enableNewInputs() {
+    const newInput = document.querySelector(".div-input-name");
+    const btnShuffle = document.querySelector(".btn-shuffle");
+    const listTitle = document.querySelector(".list-title");
+    newInput.classList.remove("invisible");
+    btnShuffle.classList.remove("invisible");
+    listTitle.classList.remove("invisible");
+}
+
+function disableNewInputs() {
+    const newInput = document.querySelector(".div-input-name");
+    const btnShuffle = document.querySelector(".btn-shuffle");
+    const listTitle = document.querySelector(".list-title");
+    newInput.classList.add("invisible");
+    btnShuffle.classList.add("invisible");
+    listTitle.classList.add("invisible");
 }

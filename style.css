@@ -39,7 +39,7 @@ h1 {
     cursor: pointer;
 }
 
-#list-title {
+.list-title {
     margin-top: 2rem;
     text-align: center;
 }
@@ -66,7 +66,7 @@ h1 {
     gap: 8px;
 }
 
-#btn-basic {
+.btn-basic {
     height: 4rem;
     font-size: 1.8rem;
     color: #fff;
@@ -94,7 +94,17 @@ h1 {
 
 .btn-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 400px;
     margin: 0 auto;
+}
+
+.btn-rerun-section {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.invisible {
+    display: none;
 }
