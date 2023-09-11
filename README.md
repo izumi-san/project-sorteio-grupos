@@ -6,7 +6,7 @@ e dividindo essas pessoas em um número de grupos, com número de participantes 
 -----------------------------------------------------------------------------------------------------------------------
 ## Live Demo
 
-A versão mais atualizada pode ser acessada clicando [aqui](https://izumi-san.github.io/project-sorteio-grupos/){:target="_blank"}
+A versão mais atualizada pode ser acessada clicando <a href="https://izumi-san.github.io/project-sorteio-grupos/" target="_blank">aqui</a>.
 
 -----------------------------------------------------------------------------------------------------------------------
 
