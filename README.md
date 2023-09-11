@@ -4,6 +4,11 @@ Esse projeto tem como objetivo atender a demanda de sortear(escolher de forma al
 e dividindo essas pessoas em um número de grupos, com número de participantes também, determinado pelo usuário.
 
 -----------------------------------------------------------------------------------------------------------------------
+## Live Demo
+
+A versão mais atualizada pode ser acessada clicando [aqui](https://izumi-san.github.io/project-sorteio-grupos/){:target="_blank"}
+
+-----------------------------------------------------------------------------------------------------------------------
 
 ## Especificações
 
